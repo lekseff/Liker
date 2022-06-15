@@ -1,0 +1,50 @@
+* {
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+}
+
+.note {
+	max-width: 480px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 4px 3px 15px 2px rgb(34 60 80 / 20%);
+}
+
+.note__button {
+	font-size: 16px;
+	padding: 6px 33px;
+	border: none;
+	cursor: pointer;
+	background-color: #79b9ff;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	box-shadow: 3px 3px 9px 0px rgb(34 60 80 / 20%);
+}
+
+.note__button:hover {
+	background-color: #2779d0;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+.note__content {
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-out;
+}
+
+.note__text {
+	text-indent: 20px;
+}
