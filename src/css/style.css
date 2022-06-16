@@ -13,38 +13,114 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 
-.note {
-	max-width: 480px;
-	border: 1px solid gray;
-	border-radius: 10px;
-	overflow: hidden;
-	padding: 10px;
-	box-shadow: 4px 3px 15px 2px rgb(34 60 80 / 20%);
+.container {
+	position: relative;
 }
 
-.note__button {
+.btn {
+	display: inline-block;
+	background-color: red;
 	font-size: 16px;
-	padding: 6px 33px;
-	border: none;
-	cursor: pointer;
-	background-color: #79b9ff;
-	border-radius: 8px;
-	transition: all 0.3s ease;
-	box-shadow: 3px 3px 9px 0px rgb(34 60 80 / 20%);
-}
-
-.note__button:hover {
-	background-color: #2779d0;
 	color: white;
-	transition: all 0.3s ease;
+	padding: 8px 25px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
 }
 
-.note__content {
-	max-height: 0;
-	overflow: hidden;
-	transition: all 0.3s ease-out;
+.btn:active {
+	transform: scale(0.97);
 }
 
-.note__text {
-	text-indent: 20px;
+.heart {
+	position: absolute;
+	left: calc(50% - 16px);
+	bottom: 0;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background-image: url('../js/img/heart.png');
+	/* animation-name: like-1; */
+	animation-duration: 500ms;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;	
+	z-index: -1;
+}
+
+/* Первый вариант анимации */
+@keyframes like-1 {
+	0% {
+		left: calc(50% - 16px);
+	}
+	25% {
+		left: calc(50% - 25px - 16px);
+	}
+	50% {
+			left: calc(50% - 16px);
+	}
+	75% {
+		left: calc(50% + 25px - 16px);
+	}
+	100% {
+			bottom: 200px;
+			opacity: 0;
+			left: calc(50% - 16px);
+	}
+}
+
+/* Второй вариант анимации */
+@keyframes like-2 {
+	0% {
+		left: calc(50% - 16px);
+	}
+	50% {
+			left: calc(50% + 25px - 16px);
+	}
+	75% {
+		left: calc(50% - 25px - 16px);
+	}
+	100% {
+			bottom: 200px;
+			opacity: 0;
+			left: calc(50% - 16px);
+	}
+}
+
+/* Третий вариант анимации */
+@keyframes like-3 {
+	0% {
+		left: calc(50% - 16px);
+	}
+	50% {
+			left: calc(50% - 25px - 16px);
+	}
+	75% {
+		left: calc(50% + 25px - 16px);
+	}
+	100% {
+			bottom: 200px;
+			opacity: 0;
+			left: calc(50% - 16px);
+	}
+}
+
+/* Четвертый вариант анимации*/
+@keyframes like-4 {
+	0% {
+		left: calc(50% - 16px);
+	}
+	25% {
+		left: calc(50% + 25px - 16px);
+	}
+	50% {
+			left: calc(50% - 16px);
+	}
+	75% {
+		left: calc(50% - 25px - 16px);
+	}
+	100% {
+			bottom: 200px;
+			opacity: 0;
+			left: calc(50% - 16px);
+	}
 }

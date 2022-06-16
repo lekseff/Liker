@@ -1,6 +1,6 @@
-![example workflow](https://github.com/lekseff/Collapsible/actions/workflows/deploy.yml/badge.svg)
+![example workflow](https://github.com/lekseff/Liker/actions/workflows/deploy.yml/badge.svg)
 
-[GitHub Pages](https://lekseff.github.io/Collapsible/)
+[GitHub Pages](https://lekseff.github.io/Liker/)
 
 
 #### Легенда
